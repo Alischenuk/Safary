@@ -42,13 +42,30 @@ body {
 }
 
 .header__logo {
+  position: relative;
   width: 285px;
   height: 60px;
   padding-top: 16px;
+  padding-left: 70px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 16px;
+}
+
+.header__logo::before{
+  content: "";
+  position: absolute;
+  background-image: url('../images/лого.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 48px;
+  left: 0;
+}
+
+.header__logo span {
+  text-transform: uppercase;
 }
 
 .menu__list {
